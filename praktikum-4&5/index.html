@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+</head>
+<body>
+    <form action="action.php" method="POST">
+        <label for="nama_input_text">Nama:</label>
+        <input type="text" id="nama_input_text" name="nama_input_text" required>
+        <br><br>
+        <label for="JK_pria">Jenis Kelamin:</label>
+        <input type="radio" id="JK_pria" name="JK" value="Pria" required>
+        <label for="JK_pria">Pria</label>
+        <input type="radio" id="JK_wanita" name="JK" value="Wanita" required>
+        <label for="JK_wanita">Wanita</label>
+        <br><br>
+        <label for="hobby_joging">Hobi:</label>
+        <input type="checkbox" id="hobby_joging" name="hobby" value="Joging" required>
+        <label for="hobby_joging">Joging</label>
+        <br><br>
+        <label for="hari">Hari Favorit:</label>
+        <select id="hari" name="hari" required>
+            <option value="" disabled selected>Pilih Hari</option>
+            <option value="senin">Senin</option>
+            <option value="selasa">Selasa</option>
+            <option value="rabu">Rabu</option>
+            <option value="kamis">Kamis</option>
+            <option value="jumat">Jumat</option>
+            <option value="sabtu">Sabtu</option>
+            <option value="minggu">Minggu</option>
+        </select>
+        <br><br>
+        <label for="alamat">Alamat:</label>
+        <textarea id="alamat" name="alamat" required></textarea>
+        <br><br>
+        <input type="submit" value="Kirim">
+    </form>
+</body>
+</html>
